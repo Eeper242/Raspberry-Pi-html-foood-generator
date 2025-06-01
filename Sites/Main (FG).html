@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jedálna lotéria</title>
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+	<script>
+		function gentext() {
+			var word=['Halušky', "Pirohy", "Sviečková", "Hranolky so syrom", "Segedínsky guláš", "ryžový nákyp", "rezne", "buchty na pare", "pečené buchty", "gruľe s mäsom", "francúzke zemiaky", "palacinky", "žemľovka", "mleté mäso so zemiakmi", "perkelt", "cestoviny s tvarohom", "pečené kurča", "špagety", "knedlík s kapustou", "špekačky", "obrátený rezeň", "fašírka", "neviem", "šúľance", "objednáme si pizzu", "ryba na pare", "cestoviny s tuniakom", "chrumkavé kura z eperii"];
+			var para=document.querySelector('h5');
+			para.innerHTML=word[Math.floor(Math.random()*word.length)];
+		}
+	</script>
+	<center>
+		<h5></h5>
+		<button onclick="gentext();">Generate Food</button>
+	</center>
+</body>
+</html>

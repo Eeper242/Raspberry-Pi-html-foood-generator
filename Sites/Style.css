@@ -1,0 +1,14 @@
+h5{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url(images/BG.jpg); border-radius: 0 0 20px 20px; padding: 0vh 0 !important;
+    background-blend-mode: luminosity !important;
+    background-color: rgb(red, green, blue);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: top!important;
+}
