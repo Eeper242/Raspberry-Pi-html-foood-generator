@@ -9,27 +9,29 @@
 </head>
 <body class="container">
 	<div>
-		<label for="ChangeArea">Pridať/odstrániť jedlá</label>
+		<p class="Header">Pridať/Odstrániť Jedlá</p>
 		<textarea id="ChangeArea"></textarea>
-		<center class="container">
-			<button onclick="save()">Uložiť</button>
-			<button onclick="loadMMeal()">Zmeniť Hlavné jedlá</button>
-			<button onclick="loadSoup()">Zmeniť Polievky</button>
-		</center>
+		<div>
+			<button id="saveBTN" onclick="save()">Uložiť</button>
+			<center>
+				<button onclick="loadMMeal()" class="Style1">Zmeniť Hlavné jedlá</button>
+				<button onclick="loadSoup()" class="Style1">Zmeniť Polievky</button>
+			</center>
+		</div>
 	</div>
 	<div>
 		<center>
 			<p class="Header">Výber hlavného jedla</p>
-			<h5 class="Main" id="MMeal">test</h5>
-			<button onclick="genMMeal();">Vyber mi polievku!</button>
+			<h5 class="Main" id="MMeal"> </h5>
+			<button onclick="genMMeal();" class="Style1">Vyber mi polievku!</button>
 		</center>
 	</div>
 
 	<div>
 		<center>
 			<p class="Header">Výber polievky</p>
-			<h4 class="Main" id="soup">test</h4>
-			<button onclick="genSoup();">Vyber mi jedlo!</button>
+			<h4 class="Main" id="soup"> </h4>
+			<button onclick="genSoup();" class="Style1">Vyber mi jedlo!</button>
 		</center>
 	</div>
 </body>
