@@ -56,7 +56,7 @@ function save(){
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ 
         text: text,
-        saveTo: saveTo
+        saveTo: saveTo.toString()
      })
   })
   .then(res => res.text())
