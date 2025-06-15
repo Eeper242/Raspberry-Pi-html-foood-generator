@@ -63,3 +63,11 @@ function save(){
   .then(msg => alert(msg))
   .catch(err => alert("Error: " + err));
 }
+
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}

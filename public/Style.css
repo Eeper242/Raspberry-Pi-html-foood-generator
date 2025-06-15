@@ -9,7 +9,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
+}
+
+.center{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .Style1{
@@ -78,15 +85,95 @@ body{
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.308);
     transition: 200ms;
+    color: white;
 }
 
 #ChangeArea:focus{
     transition: 200ms;
     background-color: rgba(255, 255, 255, 0.7);
+    color: black;
 }
 
 @media only screen and (max-width: 600px) {
     body{
     display: block;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
 }
+}
+/*
+.main-container {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    border-style: solid;
+}
+
+.save-btn {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+*/
+#flex{
+    display: flex;
+    gap: 50px;
+}
+
+#info-btn{
+    position: absolute;
+    right: 1.75%;
+    bottom: 3%;
+    height: 35px;
+    width: 35px;
+    transition: 200ms;
+}
+
+.overlay {
+  height: 40%;
+  width: 40%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 25%;
+  left: 30%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  border-radius: 10px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 60px;
+}
+
+.info-txt{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
